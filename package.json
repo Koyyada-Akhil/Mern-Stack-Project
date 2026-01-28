@@ -1,0 +1,17 @@
+{
+  "name": "testproject",
+  "version": "1.0.0",
+  "scripts": {
+    "start:backend": "node backend/server.js",
+    "dev:backend": "nodemon backend/server.js",
+    "start:frontend": "npm --prefix frontend start",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\""
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11",
+    "gh-pages": "^6.3.0",
+    "concurrently": "^8.2.0"
+  }
+}
