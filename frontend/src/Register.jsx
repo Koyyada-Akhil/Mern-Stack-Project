@@ -16,7 +16,7 @@ const Register = () => {
     }
     const SubmitHandler=e=>{
         e.preventDefault()
-         axios.post("/register", data)
+         api.axios.post("/register", data)
     .then(res => {
       alert(res.data)
       setData({
