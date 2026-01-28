@@ -16,7 +16,7 @@ const Myprofile = () => {
       return;
     }
 
-    api.axios.get(`${import.meta.env.VITE_API_URL}/myprofile`, {
+    api.get(`${import.meta.env.VITE_API_URL}/myprofile`, {
       headers: { "x-token": token },
     })
       .then((res) => setData(res.data))

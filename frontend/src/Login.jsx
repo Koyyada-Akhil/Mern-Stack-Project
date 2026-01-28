@@ -20,7 +20,7 @@ const Login = () => {
 
   const SubmitHandler = e => {
     e.preventDefault();
-    api.axios.post("/login", data)
+    api.post("/login", data)
       .then(res => {
         console.log(res.data);  // check token
         setToken(res.data.token); // if backend returns accessToken use res.data.accessToken

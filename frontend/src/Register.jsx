@@ -16,7 +16,7 @@ const Register = () => {
     }
     const SubmitHandler=e=>{
         e.preventDefault()
-         api.axios.post("/register", data)
+         api.post("/register", data)
     .then(res => {
       alert(res.data)
       setData({
