@@ -16,7 +16,7 @@ const Myprofile = () => {
       return;
     }
 
-    api.get(`${import.meta.env.VITE_API_URL}/myprofile`, {
+    api.get("/myprofile", {
       headers: { "x-token": token },
     })
       .then((res) => setData(res.data))
