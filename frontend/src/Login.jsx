@@ -2,7 +2,8 @@ import React from "react";
 import { useState, useContext } from "react";
 import { store } from "./App";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
+import api from "./api/axios";
+
 
 const Login = () => {
   const [token, setToken] = useContext(store);
