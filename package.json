@@ -10,8 +10,8 @@
     "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\""
   },
   "devDependencies": {
-    "nodemon": "^3.1.11",
+    "concurrently": "^8.2.0",
     "gh-pages": "^6.3.0",
-    "concurrently": "^8.2.0"
+    "nodemon": "^3.1.11"
   }
 }
