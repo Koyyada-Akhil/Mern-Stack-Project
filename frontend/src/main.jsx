@@ -4,12 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 
 createRoot(document.getElementById("root")).render(
-  <BrowserRouter
-  future={{
-    v7_startTransition: true,
-    v7_relativeSplatPath: true 
-  }}
->
+  <BrowserRouter>
     <App />
   </BrowserRouter>
 );
